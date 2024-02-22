@@ -59,3 +59,75 @@
     - `remove(value)` : value 1개만 삭제
     - `pop()` : <span style="color:slateblue">_맨 마지막 원소 출력 후 삭제_</span>
 - <span style="color:indianred">***튜플은 리스트와 똑같다. 하지만 수정,삭제가 안된다 !!***</span>
+
+## 2일차
+### Python 학습
+> 1. 딕셔너리 집합
+> 2. 불(bool)형
+> 3. None형
+> 4. 제어문(if , for , while)
+> 5. 제어문 연습
+> 6. 함수
+
+#### 딕셔너리
+- Key 와 Value 가 한 쌍으로 이루어진 자료형
+    ```python
+    spiderMan = {
+        "name": "Cristiano Ronaldo",
+        "age": 37,
+        "weapon": "Body",
+        "friends": ["Messi", "Neymar", "Park"],
+    }
+    ```
+- `items()` : 모든 아이템 출력
+- `get(key)` : 딕셔너리 Value 가져오기
+- `clear()` : 데이터 모두 삭제
+- `del` : 객체 자체를 삭제
+#### 불(bool)형과 특수타입(None)
+- Python 에서 bool 타입은 **참/거짓을 판별하는 자료형**이다.
+- 다른 프로그래밍 언어와 다르게 `True / False` 로 구분된다.
+- `None` 은 `Null` 과 똑같은 의미를 가진다.
+#### 제어문
+- if문
+    ```python
+    if money == True:
+        # indentation(들여쓰기) : 파이썬에서 들여쓰기르 잘 못하면 에러가 뜬다.
+        print("택시타고 가")
+    elif money < 5000 and money >= 2500:  # Python 에서 else 는 elif 로 쓴다.
+        print("중간에 내릴게요")
+    else:
+        print("뛰어가")
+    ```
+- for문 : `range()` 함수를 자주 쓴다.
+    - range(시작값, 끝값, 증감값) 이 기본이며 시작값과 증감값을 생략하면 0부터 시작해서 1씩 증가한다.
+    ```python
+    grade = [90, 80, 50, 70, 10]
+    sum = 0
+    for i in grade:
+        sum += i
+    ```
+- `list comprehension` : 여러 조건으로 list 를 대량으로 생성할 떄 유용
+    ```python
+    print([i for i in range(1, 10001)])
+
+    print([num * 3 for num in range(1, 1001) if num % 3 == 0])
+    ```
+#### function(함수)
+- 반환타입 없이 `def` 키워드를 사용하여 선언
+- 동적 매개변수
+    ```python
+    def plus_many(*items):  # 동적 매개변수
+        result = 0
+        for item in items:
+            result += item
+
+        return result
+    ```
+- `람다(lambda)`함수
+    ```python
+    add = lambda a, b: a + b
+    print(add(5, 4))
+
+    madd = lambda a, *args: [i * 4 for i in args]
+    print(madd(3, 1, 2, 4))
+    ```
