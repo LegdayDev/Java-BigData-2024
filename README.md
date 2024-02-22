@@ -1,11 +1,11 @@
 # Java BigData 2024
 ## 1 일차
 ### 파이썬 개발환경 설정
-> - `Git` 세팅 및 `Github` 가입
-> - `Github Desktop` 설치 및 세팅
-> - `Python` 설치
-> - `VS Code` 설치
-> - `D2Coding` 폰트 세팅
+> - [Git](https://git-scm.com/) 세팅 및 [GitHub](https://github.com/) 가입
+> - [Github Desktop](https://desktop.github.com/?ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs) 설치 및 세팅
+> - [Python](https://www.python.org/) 설치
+> - [VS code](https://code.visualstudio.com/) 설치
+> - [D2coding](https://github.com/naver/d2codingfont) 폰트 세팅
 ### Python 학습 
 > 1.  Python 개요
 > 2. Python 기초 문법 : 기본 자료형 , 문자열 자료형 , 리스트 , 튜플
