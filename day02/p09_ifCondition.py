@@ -26,3 +26,7 @@ print(6 in [1, 3, 5, 7, 9])
 
 ## print() 함수 옵션들 : sep , end
 print("13579", "1011", sep=",")  # sep 구분자
+
+score = 60
+
+print("success" if score >= 60 else "falure")
