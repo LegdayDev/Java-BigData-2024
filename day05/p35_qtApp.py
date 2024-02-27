@@ -10,7 +10,6 @@ QApplication : 앱을 전체관리하는 클래스
 QWidget : 상단 메뉴바가 없는 윈도우 창
 QMainWindow : 상단 메뉴바가 있는 윈도우 창
 """
-import os
 import sys
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import *
@@ -23,7 +22,7 @@ class myApp(QWidget):
         self.initUI()
 
     def initUI(self):
-        self.setGeometry(500, 250, 1000, 600)
+        self.setGeometry(500, 250, 1000, 600)  # 시작위치(x,y) 창크기(width,height)
         self.setWindowTitle("My First Windows App")
         self.show()  # 필수 메서드
 
@@ -33,9 +32,7 @@ class myApp(QWidget):
 
         paint.setPen(QColor(102, 204, 102))  # 폰트 색상(R,G,B)
         paint.setFont(QFont("D2Coding", 30))  # 폰트 종류와 크기
-        paint.drawText(
-            275, 300, "Football is Cristiano Ronaldo"
-        )  # 윈도우 창에 글자를 그린다.
+        paint.drawText(275, 300, "Football is Cristiano Ronaldo") # 텍스트 시작위치(x,y), 텍스트 내용
 
         paint.end()  # 그림을 닫아야한다.
 
