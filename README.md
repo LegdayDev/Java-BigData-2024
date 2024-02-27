@@ -248,7 +248,7 @@
     ```
 - 주소록 앱 시연영상
   
-![주소록 앱 시연영상](https://raw.githubusercontent.com/LegdayDev/Java-BigData-2024/master/images/addrBook.gif)
+![주소록앱](https://raw.githubusercontent.com/LegdayDev/Java-BigData-2024/master/images/addrBook.gif)
 
 #### Windows App(PyQt 5)
 - 윈도우 창 크기조절
