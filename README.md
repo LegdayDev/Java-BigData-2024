@@ -211,3 +211,48 @@
 - 예외 처리는 다른 프로그래밍과 똑같은 개념이다
 - 단, 파이썬에서는 `try-escept` , `try-except-finally` , `try-except-else` 로 나뉜다.
     - `else` 는 예외가 발생했을 때만 실행하는 구문이다.
+
+## 5일차
+### Python 응용
+> 1. 아스키 및 유니코드
+> 2. 주소록 앱 만들기(프로젝트)
+> 3. Windows App(Tkinter, PyQt)
+
+#### 주소록 앱 만들기
+- 연락처를 추가,삭제,출력 을 할 수 있는 앱이다.
+- 클래스의 구조는 아래와 같다.
+    ```python
+    class Contact:  # 주소록 클래스
+        __name = ""
+        __phoneNumber = ""
+        __eMail = ""
+        __addr = ""
+
+        def __init__(self, name, phoneNumber, eMail, addr) -> None:  # 생성자
+            self.__name = name
+            self.__phoneNumber = phoneNumber
+            self.__eMail = eMail
+            self.__addr = addr
+
+        def __str__(self) -> str:
+            return f"이  름 = {self.__name}\n핸드폰 = {self.__phoneNumber}\n이메일 = {self.__eMail}\n주  소 = {self.__addr}"
+
+        def isNameExist(self, name):
+            if self.__name == name:
+                return True
+            else:
+                return False
+
+        def getInfo(self):
+            return self.__name, self.__phoneNumber, self.__eMail, self.__addr
+    ```
+- 주소록 앱 시연영상
+- ![주소록 앱 시연영상](https://raw.githubusercontent.com/LegdayDev/Java-BigData-2024/master/images/addrBook.gif)
+
+#### Windows App(PyQt 5)
+- 윈도우 창 크기조절
+- 윈도우 창 타이틀 설정
+- 윈도우 창 위에 글자 그리기
+  - 폰트 종류 및 크기, 색상 설정
+- MacOS기준(작업표시줄 아이콘 변경)
+![myApp](https://raw.githubusercontent.com/LegdayDev/Java-BigData-2024/master/images/myApp.png)
