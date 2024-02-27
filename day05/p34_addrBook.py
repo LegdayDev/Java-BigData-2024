@@ -136,7 +136,6 @@ def run():
             delContact(listContact, name)
             input("연락처 삭제 성공!! Enter키를 누르십시오")
         elif selMenu == 4:  # 종료
-            print(f"list 길이는 {len(listContact)}")
             saveContact(listContact)
             break
         else:
