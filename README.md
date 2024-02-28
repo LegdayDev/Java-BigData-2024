@@ -272,13 +272,10 @@
   - `btn1.clicked.connect(self.btn1Clicked)`
 - `btn1Clicked()` 함수를 호출하여 로직을 실행한다.
 - `QMessageBox.about(self, caption, msg)` : 알림창을 띄운다.
-- 버튼을 눌렀을 때
+#### PyQt5 자식클래스로 만든 윈도우 화면
 ![버튼](./images/btnClick.png)
-- 종료버튼을 눌렀을 때
 ![종료](./images/btnClose.png)
 
 #### Qt Designer 를 이용한 윈도우 화면 만들기
-- 처음 화면
 ![첫화면](./images/QtDesigner1.png)
-- 버튼 클릭시 텍스트가 바뀌고 알림창이 뜬다.
 ![두번째화면](./images/QtDesigner2.png)]
