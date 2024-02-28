@@ -257,3 +257,28 @@
   - 폰트 종류 및 크기, 색상 설정
 - MacOS기준(작업표시줄 아이콘 변경)
 ![myApp](https://raw.githubusercontent.com/LegdayDev/Java-BigData-2024/master/images/myApp.png)
+
+## 6일차
+### Python 응용
+> 1. PyQt5 : QWidget 자식 클래스 종류들
+> 2. Qt Designer로 UI 만들기
+> 3. Naver API 연동을 이용하여 네이버뉴스앱(진행중)
+#### PyQt5 : QWidget 자식 클래스 종류들
+- `QLabel` : 라벨을 사용하는 클래스
+- `QVBoxLayout` : 레이아웃을 사용하는 클래스
+- `addWidget()` : 레이아웃이나 라벨을 추가하는 함수
+- `QPushButton` : 버튼을 추가하는 클래스
+- 버튼을 클릭했을 때 동작하는 함수를 연결해주는 코드
+  - `btn1.clicked.connect(self.btn1Clicked)`
+- `btn1Clicked()` 함수를 호출하여 로직을 실행한다.
+- `QMessageBox.about(self, caption, msg)` : 알림창을 띄운다.
+- 버튼을 눌렀을 때
+![버튼](./images/btnClick.png)
+- 종료버튼을 눌렀을 때
+![종료](./images/btnClose.png)
+
+#### Qt Designer 를 이용한 윈도우 화면 만들기
+- 처음 화면
+![첫화면](./images/QtDesigner1.png)
+- 버튼 클릭시 텍스트가 바뀌고 알림창이 뜬다.
+![두번째화면](./images/QtDesigner2.png)]
