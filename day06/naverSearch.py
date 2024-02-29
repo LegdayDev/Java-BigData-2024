@@ -4,6 +4,7 @@ import datetime
 import json
 from urllib.request import Request, urlopen
 from urllib.parse import quote # 유니코드로 인코딩
+import ssl
 
 
 class NaverSearch:
@@ -15,6 +16,7 @@ class NaverSearch:
         req = Request(url)
         req.add_header("X-Naver-Client-Id", "sCtc4lOTO75xcfkiqW9c")  # Client ID
         req.add_header("X-Naver-Client-Secret", "D0VAxU8YB6")  # Client PW
+        ssl._create_default_https_context = ssl._create_unverified_context
 
         try:
             res = urlopen(req)
