@@ -278,4 +278,19 @@
 
 #### Qt Designer 를 이용한 윈도우 화면 만들기
 ![첫화면](./images/QtDesigner1.png)
-![두번째화면](./images/QtDesigner2.png)]
+![두번째화면](./images/QtDesigner2.png)
+## 7일차
+### Python 응용
+> 1. PyQt5 : 네이버 뉴스 API 연동 앱 완성
+> 2. JSON 학습
+> 3. Thread 학습
+> 4. TTS, QR Code 생성기 , 구글 번역기 앱
+#### 네이버 뉴스 API 연동 앱
+![뉴스앱](./images/myNewsApp.png)
+#### Thread 학습
+![noThread](./images/noThread.png)
+![Thread](./images/thread.png)
+#### QR Code 생성기
+![QRCode](./images/myQrCode.png)
+#### 구글 번역기 앱
+![google](./images/myTransApp.png)
