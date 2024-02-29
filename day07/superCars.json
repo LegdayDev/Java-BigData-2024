@@ -1,0 +1,12 @@
+{
+	"jeep": {
+		"price": 85000000,
+		"year": "2023",
+		"type": "gasoline"
+	},
+	"audi": {
+		"price": 300000000,
+		"year": "2020",
+		"type": "electric"
+	}
+}
