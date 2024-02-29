@@ -64,7 +64,13 @@ class myApp(QWidget):
 
         n = 0
         for post in result:
-            self.tblSearchResult.setItem(n, 0, QTableWidgetItem(post["title"]))
+            title = (
+                str(post["title"])
+                .replace("<b>", "")
+                .replace("</b>", "")
+                .replace("&quot;", "")
+            )
+            self.tblSearchResult.setItem(n, 0, QTableWidgetItem(title))
             self.tblSearchResult.setItem(n, 1, QTableWidgetItem(post["link"]))
             tempDates = str(post["pubDate"]).split(" ")  # 내일 설명
             year = tempDates[3]
