@@ -247,8 +247,8 @@
             return self.__name, self.__phoneNumber, self.__eMail, self.__addr
     ```
 - 주소록 앱 시연영상
-  
-![주소록앱](https://raw.githubusercontent.com/LegdayDev/Java-BigData-2024/master/images/addrBook.gif)
+
+![주소록앱](./images/day05Img/addrBook.gif)
 
 #### Windows App(PyQt 5)
 - 윈도우 창 크기조절
@@ -256,7 +256,7 @@
 - 윈도우 창 위에 글자 그리기
   - 폰트 종류 및 크기, 색상 설정
 - MacOS기준(작업표시줄 아이콘 변경)
-![myApp](https://raw.githubusercontent.com/LegdayDev/Java-BigData-2024/master/images/myApp.png)
+![myApp](./images/day05Img/myApp.png)
 
 ## 6일차
 ### Python 응용
@@ -273,12 +273,12 @@
 - `btn1Clicked()` 함수를 호출하여 로직을 실행한다.
 - `QMessageBox.about(self, caption, msg)` : 알림창을 띄운다.
 #### PyQt5 자식클래스로 만든 윈도우 화면
-![버튼](./images/btnClick.png)
-![종료](./images/btnClose.png)
+![버튼](./images/day06Img/btnClick.png)
+![종료](./images/day06Img/btnClose.png)
 
 #### Qt Designer 를 이용한 윈도우 화면 만들기
-![첫화면](./images/QtDesigner1.png)
-![두번째화면](./images/QtDesigner2.png)
+![첫화면](./images/day06Img/QtDesigner1.png)
+![두번째화면](./images/day06Img/QtDesigner2.png)
 ## 7일차
 ### Python 응용
 > 1. PyQt5 : 네이버 뉴스 API 연동 앱 완성
@@ -286,11 +286,22 @@
 > 3. Thread 학습
 > 4. TTS, QR Code 생성기 , 구글 번역기 앱
 #### 네이버 뉴스 API 연동 앱
-![뉴스앱](./images/myNewsApp.png)
+![뉴스앱](./images/day07Img/myNewsApp.png)
 #### Thread 학습
-![noThread](./images/noThread.png)
-![Thread](./images/thread.png)
+![noThread](./images/day07Img/noThread.png)
+![Thread](./images/day07Img/thread.png)
 #### QR Code 생성기
-![QRCode](./images/myQrCode.png)
+![QRCode](./images/day07Img/myQrCode.png)
 #### 구글 번역기 앱
-![google](./images/myTransApp.png)
+![google](./images/day07Img/myTransApp.png)
+
+## 8일차
+### Python 응용
+> 1. 파이썬 자동화 : PyAutoGui 모듈사용해서 키보드,마우스, 스크린샷 조작하기
+> 2. PyAutoGui 자동화로 네이버 날씨 캡쳐하기
+> 3. Naver 중요알림 오면 Slack 에 메시지 전송
+
+### Naver 중요알림 오면 Slack 에 메시지 전송
+![naverEmail](./images/day08Img/naverEamili.png)
+
+![Slack](./images/day08Img/SlackSend.png)
