@@ -300,8 +300,19 @@
 > 1. 파이썬 자동화 : PyAutoGui 모듈사용해서 키보드,마우스, 스크린샷 조작하기
 > 2. PyAutoGui 자동화로 네이버 날씨 캡쳐하기
 > 3. Naver 중요알림 오면 Slack 에 메시지 전송
+> 4. 이미지에서 글자 추출
 
+### 파이썬 자동화
+- `mouseInfo()` 함수를 통해 현재 마우스 위치를 기억하고 `moveTo()` 메서드에 좌표를 넣어 마우스를 조작한다.
+- 클릭과 드래그는 `Click()`, `dragTo()` 메서드를 이용한다.
+- 키보드 조작은 `write()` , `press()`, `hotKey()` 함수를 통해 조작한다.
+- 스크린샷은 `screenshot()` 에 좌표를 매개변수로 넘기고 `save()` 함수를 통해 특정 경로에 저장한다.
+### 파이썬 자동화로 네이버 날씨 캡쳐하기
+![NaverWeather](./images/day08Img/autoWeather.gif)
 ### Naver 중요알림 오면 Slack 에 메시지 전송
 ![naverEmail](./images/day08Img/naverEamili.png)
 
 ![Slack](./images/day08Img/SlackSend.png)
+
+### Tesseract 를 이용한 이미지 내 글자 인식
+![Tesseract](./images/day08Img/tesseract.png)
