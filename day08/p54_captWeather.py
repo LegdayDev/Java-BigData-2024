@@ -11,7 +11,7 @@ regions = ["서울", "강원", "대전", "대구", "부산"]
 auto.moveTo(391, 246, duration=0.5)  # 검색창 이동
 
 for region in regions:
-    auto.moveTo(165, 179, duration=0.5)  # 검색창 이동
+    auto.moveTo(145, 180, duration=0.5)  # 검색창 이동
     auto.leftClick()
     for i in range(5):  # 검색창 비우기
         auto.press("backspace")
@@ -24,8 +24,8 @@ for region in regions:
     auto.press("enter")
     time.sleep(1.0)
 
-    startX, startY = 31, 299
-    endX, endY = 701, 944
+    startX, startY = 27, 299
+    endX, endY = 700, 945
 
     img = auto.screenshot(region=(startX, startY, endX - startX, endY - startY))
     img.save(f"./images/day08Img/{region}날씨.png")
