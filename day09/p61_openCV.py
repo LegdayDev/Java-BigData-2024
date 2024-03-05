@@ -1,5 +1,5 @@
 # file: p61_openCV.py
-# desc: OpenCV 이미지 처리 계속 - 블러처리, 엣지검출, 외곽선 검출
+# desc: OpenCV - 블러처리, 엣지검출, 외곽선 검출
 
 import cv2
 
