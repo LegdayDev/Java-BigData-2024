@@ -65,7 +65,7 @@ class imageEditor(QMainWindow):
 
     def actionSaveClicked(self):
         filePath, _ = QFileDialog.getSaveFileName(
-            self, "Image Save", "", "Image file(*.jpg;*.png)"
+            self, "Image Save", "", "Image file(*.png)"
         )
         if filePath == "":
             return
