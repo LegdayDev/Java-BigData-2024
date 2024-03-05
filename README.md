@@ -316,3 +316,15 @@
 
 ### Tesseract 를 이용한 이미지 내 글자 인식
 ![Tesseract](./images/day08Img/tesseract.png)
+
+## 9일차
+### Python 응용
+> 1. 이미지 처리 OpenCV
+> 2. Flask 웹서버
+> 3. 이미지 에디터 만들기
+
+### 이미지 처리 OpenCV - 동영상에서 얼굴인식
+
+![openCV](./images/day09Img/openCv.gif)
+### 이미지 에디터 만들기
+![imageEditor](./images/day09Img/imageEditor.gif)
