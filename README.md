@@ -1,4 +1,4 @@
-# Java BigData 2024
+# Python-Study
 ## 1 일차
 ### 파이썬 개발환경 설정
 > - [Git](https://git-scm.com/) 세팅 및 [GitHub](https://github.com/) 가입
